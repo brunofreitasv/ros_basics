@@ -6,10 +6,12 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  geometry_msgs
   actionlib_msgs
   cv_bridge
   image_transport
   message_generation
+  roslaunch
 )
 
 
@@ -60,3 +62,5 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 #  ${OpenCV_INCLUDE_DIRS}
 )
+
+roslaunch_add_file_check(launch)

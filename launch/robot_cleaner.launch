@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="ros_basics" type="robot_cleaner.py" name="robot_cleaner" output="screen"/>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node" output="screen"/>
+</launch>
