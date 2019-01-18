@@ -11,7 +11,7 @@ def main():
     color_img = cv2.imread('images/'+image_name+'.jpg', cv2.IMREAD_COLOR)
     
     print 'display the image in native color'
-    cv2.namedWindow('Original Image', cv2.WINDOW_NORMAL)
+    cv2.namedWindow('Original image', cv2.WINDOW_NORMAL)
     cv2.imshow('Original image', color_img)
     cv2.moveWindow('Original Image', 0, 0)
     print color_img.shape

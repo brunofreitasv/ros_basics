@@ -5,10 +5,10 @@ import numpy as np
 import cv2
      
 def main():
-   image_name = 'tree'
+   image_name = 'ball'
 
    print 'read image from file'
-   img = cv2.imread('images/'+image_name+'.jpg')
+   img = cv2.imread('images/'+image_name+'.jpeg')
 
    print 'create a window holder for the image'
    cv2.namedWindow('Image', cv2.WINDOW_NORMAL)
