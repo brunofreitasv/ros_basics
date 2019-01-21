@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="ros_basics" type="camera_ball.py" name="camera_ball" output="screen"/>
+    <node pkg="usb_cam" type="usb_cam_node" name="usb_cam_node" output="screen">
+        <param name="pixel_format" value="yuyv"/>
+    </node>
+</launch>

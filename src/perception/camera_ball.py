@@ -96,7 +96,7 @@ def image_callback(image_message):
     except cvb.CvBridgeError as e:
         print e
 
-    magLower = (160, 150, 110)
+    magLower = (160, 120, 80)
     magUpper = (180, 250, 250)
          
     hsv_img = rgb_to_hsv(cv_image)
