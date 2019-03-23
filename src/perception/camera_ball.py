@@ -96,8 +96,8 @@ def image_callback(image_message):
     except cvb.CvBridgeError as e:
         print e
 
-    magLower = (160, 120, 80)
-    magUpper = (180, 250, 250)
+    magLower = (25, 120, 80)
+    magUpper = (40, 250, 250)
          
     hsv_img = rgb_to_hsv(cv_image)
     mask_img = create_mask(hsv_img, magLower, magUpper)
@@ -109,7 +109,7 @@ def image_callback(image_message):
 
 def main():
     rospy.init_node('image_node', anonymous = True)
-    image_subscriber = rospy.Subscriber('/usb_cam/image_raw', Image, image_callback)
+    rospy.Subscriber('/usb_cam/image_raw', Image, image_callback)
     try:
         rospy.spin()
     except KeyboardInterrupt:

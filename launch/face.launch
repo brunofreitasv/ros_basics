@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <launch>
-    <node pkg="ros_basics" type="camera_ball.py" name="camera_ball" output="screen"/>
+    <node pkg="ros_basics" type="face.py" name="face_detector" output="screen"/>
     <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
         <param name="video_device" value="/dev/video0" />
         <param name="image_width" value="640" />
